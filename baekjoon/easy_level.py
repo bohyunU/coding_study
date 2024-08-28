@@ -1,6 +1,6 @@
-#  Python 배우기 (1~50) - automata  #
+# Python 배우기 (1~50) - automata #
 
-### A + B
+### A + B 
 
 first,second = map(int,input().split())
 
