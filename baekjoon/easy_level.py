@@ -67,3 +67,41 @@ for i in range(0,N):
         
 print(first)
 print(second)
+
+
+### OX 퀴즈
+
+#문제 갯수
+N = int(input())
+
+for i in range(N):
+    answer = input()
+    result = 0
+    temp = 0
+    for j in range(0,len(answer)):
+        if answer[j] == 'O':
+            temp += 1
+        else:
+            temp = 0
+        result += temp
+    print(result)
+    
+    
+### Baseball
+
+# 경기수
+N = int(input())
+
+first_score = second_score = 0
+for i in range(N * 9):
+    if (i+1) % 9 == 0:
+        if first_score > second_score:
+            print('Yonsei')    
+        elif first_score < second_score:
+            print('Korea')
+        else:
+            print('Draw')
+        first_score = second_score = 0
+    first, second = map(int,input().split())
+    first_score += first
+    second_score += second
