@@ -46,7 +46,6 @@ for i in range(N):
     print(player_dict[max(player_dict)])
     
     
-    
 ## 생일
 
 N = int(input())
@@ -64,3 +63,21 @@ for i in range(N):
 print(people_list[max(people_list)])
 print(people_list[min(people_list)])
     
+    
+    
+## A + B
+
+T = int(input())
+
+for i in range(T):
+    N, M = map(int,input().split())
+    print(N + M)
+    
+    
+## 주사위
+
+N = int(input())
+
+for i in range(1, N + 1):
+    first, second = map(int,input().split())
+    print(f"Case {i}:",first+second)
