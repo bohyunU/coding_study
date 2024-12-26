@@ -81,3 +81,41 @@ N = int(input())
 for i in range(1, N + 1):
     first, second = map(int,input().split())
     print(f"Case {i}:",first+second)
+    
+## 평균
+
+N = int(input())
+num = list(map(int,input().split()))
+
+M = max(num)
+
+for i in range(0,N):
+    num[i] = num[i] / M * 100
+
+print(sum(num) / N)
+
+## 2506번 점수계산
+
+N = int(input())
+num = list(map(int,input().split()))
+
+result = []
+temp = 0
+for i in range(0,N):
+    if num[i] == 1:
+        temp += 1
+        result.append(temp)
+    else:
+        temp = 0
+        result.append(temp)
+        
+print(sum(result))
+
+## 9085 더하기
+
+N = int(input())
+
+for i in range(N):
+    num = int(input())
+    num_list = list(map(int, input().split()))
+    print(sum(num_list))
