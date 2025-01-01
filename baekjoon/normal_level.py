@@ -119,3 +119,17 @@ for i in range(N):
     num = int(input())
     num_list = list(map(int, input().split()))
     print(sum(num_list))
+    
+## 10984 내 학점을 구해줘
+
+T = int(input())
+
+for i in range(T):
+    N = int(input())
+    mid_total = 0
+    mid_score = 0.0
+    for j in range(N):
+        M, Score = map(float, input().split())
+        mid_total += M
+        mid_score += Score * M
+    print(int(mid_total), round(mid_score / mid_total, 1))
