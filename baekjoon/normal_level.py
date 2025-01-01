@@ -133,3 +133,23 @@ for i in range(T):
         mid_total += M
         mid_score += Score * M
     print(int(mid_total), round(mid_score / mid_total, 1))
+    
+## 1408 24 (다시)
+
+now_hour, now_min, now_sec = map(int,input().split(':'))
+start_hour, start_min, start_sec = map(int,input().split(':'))
+                                 
+now_total_second = now_hour * 3600 + now_min * 60 + now_sec
+start_total_second = start_hour * 3600 + start_min * 60 + start_sec
+    
+if start_total_second >= now_total_second:
+    remain_second = start_total_second - now_total_second
+else:
+    remain_second = 24 * 3600 - (now_total_second - start_total_second)
+    
+fin_hour = remain_second // 3600
+remain_second %= 3600
+fin_min = remain_second // 60
+fin_sec = remain_second % 60
+
+print(f"{str(fin_hour).zfill(2)}:{str(fin_min).zfill(2)}:{str(fin_sec).zfill(2)}")
