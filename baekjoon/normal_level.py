@@ -171,9 +171,16 @@ for i in range(N):
     star_num += 1
     blank_num -= 1
     
-## 2440 별 직기 - 3
+## 2440 별 찍기 - 3
 
 N = int(input())
 
 for i in range(N, 0, -1):
     print('*' * i)
+    
+## 2441 별 찍기 - 4
+
+N = int(input())
+
+for i in range(0,N):
+    print(' ' * i + '*' * (N-i))
