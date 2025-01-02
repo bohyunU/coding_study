@@ -153,3 +153,27 @@ fin_min = remain_second // 60
 fin_sec = remain_second % 60
 
 print(f"{str(fin_hour).zfill(2)}:{str(fin_min).zfill(2)}:{str(fin_sec).zfill(2)}")
+
+
+## 2439 별 찍기 - 2
+
+N = int(input())
+
+star_num = 1 
+blank_num = N - 1
+
+for i in range(N):
+    blank = ' ' * blank_num
+    stars = '*' * star_num
+    
+    print(blank + stars)
+    
+    star_num += 1
+    blank_num -= 1
+    
+## 2440 별 직기 - 3
+
+N = int(input())
+
+for i in range(N, 0, -1):
+    print('*' * i)
