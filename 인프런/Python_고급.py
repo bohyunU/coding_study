@@ -9,3 +9,5 @@ res.raise_for_status() #HTTP 에러 raise
 
 payload = res.json()
 print(payload) #json으로 실행
+
+
