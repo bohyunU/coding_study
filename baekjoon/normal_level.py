@@ -184,3 +184,13 @@ N = int(input())
 
 for i in range(0,N):
     print(' ' * i + '*' * (N-i))
+    
+## 8393 합
+
+N = int(input())
+
+if N % 2 == 0:
+    print((N + 1) * (N//2) )
+else:
+    print((N + 1) * (N//2) + (N+1)//2)
+    
